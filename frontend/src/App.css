@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+
+:root {
+    --color-green: #4dbf00;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-gray: #ffffff24;
+}
+
+body {
+    font-family: "Sen", sans-serif;
+    background-color: var(--color-black);
+}
+
+.bold_800{
+    font-weight: 600;
+}
+
+.color_primary{
+    color: var(--color-green);
+}
+
+.font_bold{
+    font-weight: 800;
+}
+.mr_3{
+    margin-right: 12px;
+}

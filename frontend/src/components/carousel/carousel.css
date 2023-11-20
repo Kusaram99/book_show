@@ -1,0 +1,88 @@
+#carousel_container {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+}
+
+#carousel_container::after {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background: linear-gradient(0deg, #000000d9, #00000000);
+    opacity: 0.67;
+}
+
+.img {
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all .5s ease;
+}
+
+.booknow_btn_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 50px 10px;
+    margin: 50px 0px;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+}
+
+.booknow_btn_container h2 {
+    font-size: 50px;
+    font-family: emoji;
+    margin: 10px 0px;
+    color: var(--color-white);
+}
+
+.booknow_btn_container #bookBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--color-white);
+    background-color: var(--color-green);
+    transition: all .5s ease;
+}
+
+.booknow_btn_container #bookBtn:hover {
+    color: var(--color-green);
+    background-color: var(--color-white);
+
+}
+
+.plus_icon {
+    font-size: 3rem;
+}
+
+@media screen and (max-width: 300px) {
+    #carousel_container {
+        height: 42vh;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .booknow_btn_container h2 {
+        font-size: 21px;
+    }
+
+    .booknow_btn_container #bookBtn {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
