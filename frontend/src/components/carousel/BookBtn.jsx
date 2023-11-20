@@ -29,7 +29,7 @@ const BookBtn = () => {
             // exclude id
             let { _id } = JSON.parse(user).data;
             // url
-            let url = 'http://localhost:8080/last-booking/' + _id;
+            let url = 'https://kusaram-book-myshow.onrender.com/last-booking/' + _id;
             // send get request
             axios.get(url, {
                 headers: {

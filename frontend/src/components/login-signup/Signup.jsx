@@ -89,7 +89,7 @@ const Signup = () => {
         // start loading
         setSpinner(v => !v);
         // define url
-        const url = 'http://localhost:8080/register';
+        const url = 'https://kusaram-book-myshow.onrender.com/register';
         axios.post(url, formData)
             .then((res) => { 
                 const obj = {

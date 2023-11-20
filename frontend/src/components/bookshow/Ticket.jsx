@@ -12,7 +12,7 @@ const Ticket = () => {
     useEffect(() => {
         const { _id } = JSON.parse(localStorage.getItem('user')).data;
         const { token } = JSON.parse(localStorage.getItem('user')); 
-        const url = "http://localhost:8080/last-booking/" + _id;
+        const url = "https://kusaram-book-myshow.onrender.com/last-booking/" + _id;
         axios.get(url, {
             headers: {
                 Authorization: token

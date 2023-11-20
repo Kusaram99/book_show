@@ -32,7 +32,7 @@ const BookBtn = () => {
                     // store in body 
                     const body = { ticket_Data: movieData, user_id: _id }
                     // url
-                    let url = "http://localhost:8080/storeTicket";
+                    let url = "https://kusaram-book-myshow.onrender.com/storeTicket";
                     // post request
                     axios.post(url, body)
                         .then((res) => {
